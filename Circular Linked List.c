@@ -79,9 +79,9 @@ void display() {
         printf("\n");
     }
 }
-int main() {
-    int ch, data, pos;
-    do {
+void main() {
+    int ch, data, pos,e;
+     while (e != 4){
         printf("1.INSERT\n2.DELETE\n3.DISPLAY\n4.EXIT\n");
         printf("Enter your choice: ");
         scanf("%d", &ch);
@@ -105,11 +105,10 @@ int main() {
                 break;
             case 4:
                 printf("Exiting...\n");
+                e=4;
                 break;
             default:
                 printf("Invalid choice...\n");
         }
-    } while (ch != 4);
-
-    return 0;
+    } 
 }
