@@ -27,6 +27,10 @@ void pop()
 }
 void display()
 {
+        if(top==-1)
+    {
+        printf("The stack underflows...");
+    }
     for(int i=top;i>=0;i--)
     {
         printf("%d\t",a[i]);
