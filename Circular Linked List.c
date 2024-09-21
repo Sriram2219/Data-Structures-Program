@@ -39,7 +39,7 @@ void delete(int pos) {
         printf("The list is empty...\n");
     } else {
         struct node* temp = head;
-        if (pos == 0) {  
+        if (pos == 1) {  
             if (head == tail) { 
                 free(head);
                 head = NULL;
@@ -51,7 +51,7 @@ void delete(int pos) {
             }
         } else {  
             struct node* prev = NULL;
-            for (int i = 0; temp->next != head && i < pos; i++) {
+            for (int i = 1; temp->next != head && i < pos; i++) {
                 prev = temp;
                 temp = temp->next;
             }
